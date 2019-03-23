@@ -8,13 +8,14 @@
 
 <ion-content>
 
-  <ion-card *ngFor="let item of (results | async)">
+  <ion-card *ngFor="let item of (results)">
     <ion-card-header>
-      <ion-card-title>Titulo</ion-card-title>
+      <ion-card-title>{{item.title}}</ion-card-title>
+      <a href="{{item.link}}">Ver más...</a>
     </ion-card-header>
   
     <ion-card-content>
-      Info de la noticia
+      <div [innerHTML]='item.description | slice:0:250'></div>
     </ion-card-content>
   </ion-card>
 

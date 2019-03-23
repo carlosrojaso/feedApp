@@ -8,9 +8,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { StripHtmlTagsPipe } from './pipe/strip-html-tags.pipe';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, StripHtmlTagsPipe],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
