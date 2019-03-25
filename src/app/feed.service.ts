@@ -7,7 +7,6 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class FeedService {
-
   private rssToJsonServiceBaseUrl: String = 'https://rss2json.com/api.json?rss_url=';
 
   constructor(
